@@ -1,0 +1,12 @@
+* Tools
+** find
+   cmd - find (path) (argument) (input)
+*** Arguments
+    * -user (search based on user)
+    * -name (search based on name)
+    * -size (search based on size)
+    * -perm (search based on permission)
+** grep, egrep, fgrep
+   * -e (Tos search for multiple options)
+   * -i (To search based on ignore case)
+     * -v (To exclude the word)

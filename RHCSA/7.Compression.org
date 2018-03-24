@@ -1,0 +1,23 @@
+* Steps
+  1. We have to make a dir with tar extension
+** tar
+   Arguments
+  * -c - create
+  * -v - verbose
+  * -f - force
+
+  * -x - extract
+
+  * then we have to compress it using the following tools
+    * gzip
+    * xz
+    * bzip2
+** dd command
+   dd if-/dev/zero of=(destination) bs=(size) count=(multiples)
+   This is used to make a file with and datatype
+* Uncompress
+  Depending on tool 
+  * gunzip
+  * bunzip
+* Single line command
+  tar -cJvf /your/path/file.tar.xz /your/path/file

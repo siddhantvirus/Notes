@@ -1,0 +1,32 @@
+* Syllabus RHCSA Part 1
+** UNIT 1 (Basic Commands)
+*** cal,cd,mkdir,pwd,touch,date,whoami,cp,mv,sort
+** UNIT 2 (Gettign help)
+*** man,pinfo,yelp,help
+** UNIT 3 (Creating and editing files)
+*** vim,emacs
+** UNIT 4 (Grafical modes documentation)
+*** evinice
+** UNIT 5 (Managing local linux users and groups)
+*** useradd,usermod,userdel,groupadd,groupmod,passwd
+** UNIT 6 (Controlling linux file system permission)
+*** chmod (symbolic,numeric), umask
+** UNIT 7 (Monitering and Managing Linux Systems)
+*** ps with options,top,kill,pkill,pgrep,sar
+** UNIT 8 (Controlling services and daemions)
+*** systemd,service,chkconfig,systemd unit files
+** UNIT 9 (Configuring abd securing OpenSSH)
+*** ssh,ssh-key-gen,/etc/hosts.deny,/etc/sshd.conf
+** UNIT 10 (Analysing and Storing logs)
+*** log architecture,audit logs,log scheduler,log rotate,rsyslog
+** UNIT 11 (Managing RHEL Networking)
+*** nmcli,nmtui,sethostname,managing network manager graphically,editing scripts in /etc/sysconfig/network-scripts
+** UNIT 12 (Archiving and copying files between systems)
+*** gzip,bzip,gunzip,bunzip,tar with options,rsync with options
+** UNIT 13 (Installing and updating system packages)
+*** RPM with options,yum with options,yum server,yum repolist
+** UNIT 14 (Accessing linux filesystem)
+*** mount, umount,in links on soft link, in link on hard link, find ,grep,locate,whereis
+** UNIT 15 (Using Virtualized systems)
+*** vmctl,virt-viewer
+    

@@ -1,0 +1,56 @@
+* Pernissions
+
+  It is nothing but access control.
+
+** There are 2 types:
+*** Symbolic
+*** Numeric
+
+    eg:
+    -rw-r--r-- 1 root root 25 Feb 13 18:37 (file name)
+    ^
+    This specifis the file type (-) for regular and (d) for dir (l) for link
+
+** The default premissions for a created file are given by umask
+   * root has a umask value “0022”
+   * user has a umask value “0002”
+
+   eg, 0777:
+
+   * The first digit is for special permissions loke setting uid
+   * The second digit is to set permieeions for user
+   * The third is to set permissions for root
+   * The 4th is to set permissions for the other users
+
+** Convention:
+  * Read    (r)   → 4
+  * Write   (w)   → 2
+  * Exicute (x)   → 1
+
+** Full permission:
+   * for a file → 666
+   * for a dir  → 777
+
+* Command:
+
+  To modify permissions 
+** Symbolic:
+*** chmod ugo = rwx
+    * ‘u’ → to set for user
+    * ‘g’ → to set for group
+    * ‘o’ → to set for other users
+    * ‘r’ → read
+    * ‘w’ → write
+    * ‘x’ → exicute
+*** chmod -+=(---) (filename)
+    * ‘+’ → to add the specified number
+    * ‘-’ → to sub specified number
+    * ‘=’ → to make the secified 
+    * 1 digit is for user
+    * 2nd digit id for group
+    * 3rd digit is for other user
+
+                                      * * *
+
+
+

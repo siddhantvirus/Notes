@@ -1,0 +1,7 @@
+* For Pratition
+  (UUID) (MOUNT PT) (FORMAT) defaut 1(take backup/important) 1(check format)
+  eg , UUID=sjvhksvhsdkvdskvkdsvdks / ext4 default 1 1
+* For swap
+  (swap file) swap swap default 0 0
+  The swap file is made by dd command
+  dd if=/dev/zero of=(destinantion) bs=(read write size) count=(the number of multibles)

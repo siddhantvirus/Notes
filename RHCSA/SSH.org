@@ -1,0 +1,8 @@
+* SSH
+  * It is used to connect to a machine on the same network from another machine securely
+  * the command is "ssh (username)@(hostmane/IP address)"
+  * config life is in /etc/ssh/ssh_config
+  * chech status systemctl status sshd
+  * ssh-keygen to gen key for passwordless authentication
+  * 2 keys 1 public and private is generated rsa_id rsa_id.pub
+  * The default behaviour is to ask for password to change this we have to disable it in config file

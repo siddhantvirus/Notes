@@ -1,0 +1,11 @@
+* Links
+** Hard link
+   * Its a copy or better its a backup of a file
+   * ln command is used to make hard link
+   * If the hard link file is edited the original also gets edited.
+   * The hard link file and the original file have the same inode id
+** Soft link
+   * its like a shortcut of a file
+   * ln -s command is used to make symbolic links
+* inode number
+  Its a registration number or id number for a file

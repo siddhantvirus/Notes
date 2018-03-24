@@ -1,0 +1,54 @@
+# Types of Users
+1. Super user (admin/root)
+2. System genarated users (These are careted for packages for background access)
+3. Regular user (user created by us)
+
+| USER         | UID        | Hoome Directory    | Shell                    |
+| ::           | ::         | ::                 | ::                       |
+| root         | o          | /root              | /bin/bash                |
+| System       | 1-999      | varies accordingly | /sbin/nologin            |
+| Regular user | 1000-60000 | /home/username     | (def)/bin/bash           |
+|              |            |                    | (can be set to anything) |
+
+## Shell
+Shell is an interpretor or you can call it an IDE that comunicates the command we input to it after converting it to machine code and the gives us the output.
+There are many types of shells;
++ sh (Shell)
++ bash (Bourn again shell)
++ konshell
++ cshell
++ kshell
++ fish shell
+
++ Note
+-> All user info is saved it "/etc/passwd"
+
+# User Commands
+
+| command            | Discription                       |
+| :                  | :                                 |
+| useradd (username) | To add a user                     |
+| id (username       | It prints the user id             |
+| passwd (username)  | To give the (username) a password |
+
++ Notes
+    + When a new user is created, a group is created with the same name that is the primary group of the user.
+    + When the user is added without a password its called a locked user
+    
+| username | password     | UID  | Primary GUD | Disp/Context    | Home Dir | Shell     |
+| root     | x(Encrypted) | 1007 | 1007        | Admin(Anything) | /root    | /bin/bash |
+
++ ^ this is the format in which user info is saved in the file "/etc/passwd"
+
+## "usermod" - Command to modify user properties
+    + usermod -l (new usename) -> To change the name of the user to the (new username)
+    + usermod -L (username)    -> To lock a user so that it cannot be opened
+    + usermod -U (username)    -> To unlock user.
+    + usermod -c (context)     -> To add context to a user.
+    + usermod -u (new uid) (username) -> To change the uid of the user.
+    + usermod -G (group name)  -> To add the user to other groups.
+
+                                     * * *
+
+
+

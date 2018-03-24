@@ -1,0 +1,18 @@
+| Command           | Discription                                                    |
+| :                 | :                                                              |
+| su                | This is a command to switch user.                              |
+| (package name) -& | To begin a process in background                               |
+| mkdir             | To make directories                                            |
+| cat               | To print, append and create files                              |
+| head (no.)        | To print the first (no.) lines                                 |
+| tail (no.)        | To print the last (no.) of lines                               |
+| history           | To print bash history                                          |
+| !(no.)            | This exicutes the (no.)th command in the bash history          |
+| w                 | This show in detail about the current loged in user            |
+| who               | This is less detailed that "w"                                 |
+| whoami            | This just prints the username of the current loged in user     |
+| chsh              | This command is used to change the shell of the user logged in |
+| who -r            | This prints the current runlevel                               |
+| du                | disk usage                                                     |
+| df                | Report dish usage                                              |
+| csp               | secure copy that requires password                            |

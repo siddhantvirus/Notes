@@ -1,0 +1,71 @@
+# Daemons
+
+It is a system generated procewss which will be running in the background from boot.
+
+# RHEL6
+
+## Service Manager -> init
+    + Its the parent process of all other processes.
+    + Its UID is 1
+
+ps -> Its a command that lists current running processes
+
+## Runlevels
+
++ init 0 -> Shutdown
++ init 1 -> Rescue mode, single user, no net access
++ init 2 -> Multiuser , no net connection
++ init 3 -> Multiuser , with net access
++ init 4 -> No use
++ init 5 -> Graphical
++ init 6 -> Reboot
+
+- who -r -> Its a command that will show the current init runlevel.
+
++ Command to start a unit.
+    service (unit name) start
+
++ Command to enable a service
+    chconfig (unit name) on
+
+# RHEL7
+
+• The Service Manger is called “systemd”
+• Its the parent process of all procewsses
+• It has UID 1
+
+##Systemctl
+
+It is a object that calls systemd
+
+This was made as in init’s case we allwas disturbed the parent processes whenever we wanted to a dd as service or cahnge runlevel. This was seen as being inefficient. So the concept of systemctl in systemd was formed.
+
+*COMMAND*
+• systemctl start (unitname)      → Starts a service
+• systemctl stop (unitname)       → Stops a service
+• systemctl enable (unitname)     → Enable a service so it will start on boottime
+• systemctl disablw (unitname)    → This disables a service
+• systemctl is-enabled (unitname) → Tell whether the service is enabled or not
+• systemctl is-active (unitname)  → Will tell us if the service is active or not
+• systemctl list-units            → Will list all the avalible units
+• systemctl list-unit-files       → Will list all the paths of all the units
+• systemctl mask (unitname)       → It will mask the unit
+
+• Note
+   ◦ A masked unit is one where we dont have the privilage to delete it.
+
+## Runlevels
+
+From RHEL7 runlevels have n=been called targets.
+•rescue.target
+•multiuser.target
+•poweroff.target
+•graphical.target
+•reboot.target
+
+The command is:
+• systemctl isolate (targe name) → To run hat target only once.
+• systemctl get-default          → This will print the default runlevel
+• systemctl set-default (target name)   → This will set to the mentioned target.
+
+→ We also need to know how to add kernel parametes in the boot sequence when we do not have a terminal at our disposal.
