@@ -7,7 +7,7 @@
 | head (no.)        | To print the first (no.) lines                                 |
 | tail (no.)        | To print the last (no.) of lines                               |
 | history           | To print bash history                                          |
-| !(no.)            | This exicutes the (no.)th command in the bash history          |
+| !(no.)            | This executes the (no.)th command in the bash history          |
 | w                 | This show in detail about the current loged in user            |
 | who               | This is less detailed that "w"                                 |
 | whoami            | This just prints the username of the current loged in user     |
