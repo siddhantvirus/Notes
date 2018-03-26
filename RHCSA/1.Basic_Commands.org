@@ -1,4 +1,4 @@
-| Command           | Discription                                                    |
+| Command           | Description                                                    |
 | :                 | :                                                              |
 | su                | This is a command to switch user.                              |
 | (package name) -& | To begin a process in background                               |
